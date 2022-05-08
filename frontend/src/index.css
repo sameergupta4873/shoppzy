@@ -12,16 +12,18 @@ code {
     monospace;
 }
 
+
+
 main{
   min-height: 100vh;
   padding: 4rem 2rem ;
 }
 
 .me-auto{
-  margin: 0rem 60rem ;
+  margin: 0rem 55rem ;
 }
 .nav-icon{
-  padding:0 1rem;
+  padding:0 0rem;
 }
 .Navbar{
   height: 4rem;
