@@ -7,6 +7,7 @@ import Header from './components/Header'
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
+import LoginScreen from './screens/LoginScreen';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Container>
           <Routes>
+            <Route exact path='/login' element={<LoginScreen/>}/>
             <Route exact path='/' element={<HomeScreen/>}/>
             <Route exact path='/cart' element={<CartScreen/>}/>
             <Route exact path='/cart/:id' element={<CartScreen/>}/>

@@ -28,3 +28,7 @@ main{
 .Navbar{
   height: 4rem;
 }
+
+.rating i {
+  color: rgb(247, 188, 38);
+}

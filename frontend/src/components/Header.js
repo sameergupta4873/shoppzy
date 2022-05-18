@@ -1,23 +1,22 @@
-import React from "react";
-import {Container , Row , Col,Navbar,Nav} from 'react-bootstrap'
-import {LinkContainer } from 'react-router-bootstrap'
+import React from 'react'
+import {Navbar ,Nav,Container } from 'react-bootstrap'
 const Header = () => {
-    return(
-            <Navbar variant="primary" className="Navbar bg-primary" >
-  <Container>
-    <LinkContainer to='/'>
-      <Navbar.Brand ><h3 className="logo text-white" >Shoppzy</h3></Navbar.Brand>
-    </LinkContainer>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
+  return (
+    <>
+    
+    <Navbar bg="primary" variant="dark">
+      <Container>
+      <Navbar.Brand href="/">Shoppzy</Navbar.Brand>
       <Nav className="me-auto">
-        <LinkContainer to="/cart"><Nav.Link ><h5 className="nav-icon text-white">Cart</h5></Nav.Link></LinkContainer>
-        <LinkContainer to="/login"><Nav.Link ><h5 className="nav-icon text-white">Sign in</h5></Nav.Link></LinkContainer>
+        <Nav.Link href="/cart"><i className="fa-solid fa-cart-shopping"></i> CART</Nav.Link>
+        <Nav.Link href="/sign-in"><i className="fa-solid fa-user"></i> SIGN IN</Nav.Link>
       </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
-    )
+      </Container>
+    </Navbar>
+  
+    
+  </>
+  ) 
 }
 
 export default Header
